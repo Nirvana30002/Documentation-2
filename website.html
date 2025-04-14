@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Final Fantasy</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link href="website.css" rel="stylesheet">
+
+  <style>
+    .carousel-inner img {
+      height: 500px;
+      object-fit: cover;
+    }
+    .card {
+      margin: 20px auto;
+      max-width: 600px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="../ bootstrap/Images/logo.avif" alt="Final Fantasy Logo" style="height: 50px;">
+          </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Deals</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Games</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">All list of games</a></li>
+              <li><a class="dropdown-item" href="#">Characters</a></li>
+              <li><a class="dropdown-item" href="#">All list of characters</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="carouselExample" class="carousel slide my-4" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Images/ff7.jpeg" class="d-block w-100" alt="Image 1">
+    </div>
+      <div class="carousel-item">
+        <img src="../ bootstrap/Images/cloudiroth.jpg" class="d-block w-100" alt="Image 2">
+      </div>
+      <div class="carousel-item">
+        <img src="../ bootstrap/Images/zearith.avif" class="d-block w-100" alt="Image 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+    <div class="card">
+      <img src="../ bootstrap/Images/cloud.webp" class="card-img-top" alt="Cloud Strife">
+      <div class="card-body">
+        <h5 class="card-title">Cloud Strife</h5>
+        <p class="card-text">A legendary warrior from Final Fantasy VII.</p>
+        <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container"></div>
+    <div class="card">
+      <img src="../ bootstrap/Images/tifa.webp" class="card-img-top" alt="Tifa Lockhart">
+      <div class="card-body">
+        <h5 class="card-title">Tifa Lockhart</h5>
+        <p class="card-text">A close friend of Cloud with a fierce punch.</p>
+        <a href="#" class="btn btn-primary">Learn More</a>
+      </div>
+    </div>
+
+    <div class="container"></div>
+    <div class="card">
+      <img src="../ bootstrap/Images/seph.avif" class="card-img-top" alt="Sephiroth">
+      <div class="card-body">
+        <h5 class="card-title">Sephiroth</h5>
+        <p class="card-text">One of the most iconic villains in gaming history.</p>
+        <a href="#" class="btn btn-primary">Learn More</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

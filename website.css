@@ -1,0 +1,119 @@
+/* style.css */
+
+/* Make carousel images look better */
+.carousel-inner img {
+    height: 1000px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  }
+  
+  /* Add space around the carousel */
+  .carousel {
+    margin: 40px auto;
+    max-width: 900px;
+  }
+  
+  /* Make navigation buttons more stylish */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Optionally hide the default icons and use your own */
+  .carousel-control-prev-icon {
+    background-image: url('left-arrow.svg'); /* Optional custom icon */
+  }
+  
+  .carousel-control-next-icon {
+    background-image: url('right-arrow.svg'); /* Optional custom icon */
+  }
+  
+  /* Optional: Hover effects on images */
+  .carousel-inner img:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+  }
+
+  /* Make carousel full width and taller */
+#carouselExample {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .carousel-inner img {
+    width: 100%;
+    height: 600px; /* Make it taller */
+    object-fit: cover; /* Ensures it fills the area without stretching */
+    border-radius: 0; /* Optional: remove roundness */
+  }
+  
+
+  .card {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    margin-bottom: 30px;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-title {
+    font-weight: bold;
+    color: #343a40;
+  }
+  
+  .card-text {
+    color: #6c757d;
+  }
+  /* Set body background */
+body {
+    background-color: #40E0D0; /* Turquoise */
+    color: #ffffff; /* Optional: makes text white for better contrast */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Optional: Make navbar stand out */
+  .navbar {
+    background-color: #007d7d !important; /* A deeper turquoise for contrast */
+  }
+  
+  .navbar .nav-link,
+  .navbar .navbar-brand {
+    color: #ffffff !important;
+  }
+  
+  /* Style carousel to look better against turquoise */
+  .carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  }
+  
+  /* Card styling against turquoise */
+  .card {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+  }
+  
+  .card-title {
+    font-weight: bold;
+  }
+  
+  .btn-primary {
+    background-color: #084f4f;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #052727;
+  }
+  
